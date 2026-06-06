@@ -1,0 +1,25 @@
+RewriteEngine On
+
+
+
+ErrorDocument 404 /404.php
+
+# SEO job URLs
+RewriteRule ^jobs/([a-z0-9-]+)-in-([a-z0-9-]*)-([0-9]+)$ jobs.php?id=$3 [L,QSA]
+
+# SEO-friendly company profile URL
+RewriteRule ^company/([a-z0-9-]+)-([0-9]+)$ company.php?id=$2 [L,QSA]
+
+RewriteRule ^jobs/([a-zA-Z0-9\-]+)-([a-zA-Z0-9\-]+)-in-([a-zA-Z0-9\-]+)-([a-zA-Z0-9\-]+)(-industry-([a-zA-Z0-9\-]+))?(-minsalary-([0-9]+))?$ job.php?jobtype=$1&worktype=$2&city=$3&state=$4&industry_slug=$6&min_salary=$8 [L,QSA]
+
+RewriteRule ^company/([a-z0-9-]+)-([0-9]+)$ company.php?id=$2 [L,QSA]
+
+
+# Optional: Redirect .php to clean URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php\s [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Clean .php URLs (e.g., /companies → companies.php)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]

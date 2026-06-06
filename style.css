@@ -1,0 +1,874 @@
+/* Reset and Global Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Base font size */
+}
+
+body {
+    font-family: "Varela Round", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+    color: rgb(72, 71, 71);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* Container and Layout */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* 16px padding */
+    /* Removed negative margin-left for stable layout */
+}
+
+.header-text {
+    /* Reserved for future header text styles */
+}
+
+/* Header Texts */
+
+.jvr-text {
+    color: rgba(25, 81, 210, 0.85);
+    letter-spacing: -0.035em;
+    margin: 6.25rem 0 0.9375rem 12.5rem; /* top:100px, left:200px, bottom:15px */
+    font-family: "Upworkrza", sans-serif;
+    font-size: 5rem; /* 80px */
+    font-weight: 400;
+    line-height: 3.375rem; /* 54px */
+    max-width: 800px;
+}
+
+.jvr-sub-text {
+    margin-left: 12.5rem;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 1.125rem; /*18px*/
+    font-style: normal;
+}
+
+/* Header Text 02 */
+
+.header-text02 {
+    display: flex;
+    font-weight: 500;
+    gap: 1.5625rem; /* 25px */
+    margin-left: 12.5rem;
+    margin-top: 3.75rem; /* 60px */
+    font-family: "Varela Round", sans-serif;
+}
+
+.header-text02 .a1,
+.header-text02 .a2,
+.header-text02 .a3,
+.header-text02 .a4,
+.header-text02 .a5,
+.header-text02 .a6 {
+    font-size: 1.1875rem; /*19px*/
+    display: flex;
+    cursor: pointer;
+    color: rgb(72, 71, 71);
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.header-text02 .a1:hover,
+.header-text02 .a2:hover,
+.header-text02 .a3:hover,
+.header-text02 .a4:hover,
+.header-text02 .a5:hover,
+.header-text02 .a6:hover {
+    color: rgba(25, 81, 210, 0.85);
+    text-decoration: none;
+}
+
+/* Lines */
+
+.line01,
+.line02,
+.line-03,
+.line-04 {
+    background-color: black;
+    margin-left: 11.5rem; /* approx 184px */
+}
+
+.line01 {
+    height: 1px;
+    width: 84%;
+    margin-top: 3.125rem; /* 50px */
+    margin-bottom: -3.125rem; /* -50px */
+}
+
+.line02 {
+    height: 1px;
+    width: 57%;
+    margin-top: 0.625rem; /* 10px */
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.line-03 {
+    height: 1px;
+    width: 83.5%;
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.line-04 {
+    height: 1px;
+    width: 27%;
+    margin-top: 0.625rem; /* 10px */
+}
+
+/* Boxes */
+
+/* Box 01 */
+
+.box-01 {
+    background-color: rgba(25, 81, 210, 0.16);
+    width: 54.375rem; /* 870px */
+    height: 25rem; /* 400px */
+    margin-left: 12.5rem;
+    border-radius: 0.5rem; /* 8px */
+    display: flex;
+    position: relative;
+    padding-top: 6.25rem; /* 100px */
+}
+
+/* Card 01 */
+
+.card-01 {
+    margin-top: 2.5rem; /* 40px */
+    display: flex;
+    position: relative;
+}
+
+.card-01-img {
+    border-radius: 0.5rem;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.card-01-heading-text {
+    font-size: 1rem; /* 16px */
+    color: rgb(72, 71, 71);
+    font-family: "Varela Round", sans-serif;
+    padding-left: 29.375rem; /* 470px */
+    margin-top: -1.25rem; /* -20px */
+    position: absolute;
+    top: 0;
+}
+
+.card-01-heading-text-para {
+    font-size: 1.375rem; /* 22px */
+    color: rgb(1, 1, 70);
+    font-family: "Varela Round", sans-serif;
+    padding-left: 29.375rem;
+    padding-top: 3.75rem;
+    position: absolute;
+    top: 0;
+}
+
+.card-01-date {
+    color: rgb(72, 71, 71);
+    font-family: "Varela Round", sans-serif;
+    padding-left: 29.375rem;
+    padding-top: 20rem; /* 320px */
+    position: absolute;
+    top: 0;
+}
+
+/* Card 02 */
+
+.card-02-img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-left: 69.375rem; /* 1110px */
+    height: 13.75rem; /* 220px */
+    margin-top: -25rem; /* -400px */
+    transition: transform 0.8s ease;
+    cursor: pointer;
+}
+
+.card-02-img:hover {
+    transform: scale(1.05);
+}
+
+.card-02-heading-text,
+.card-02-heading-text-para,
+.card-02-date {
+    color: rgb(72, 71, 71);
+    font-family: "Varela Round", sans-serif;
+    position: absolute;
+    margin-left: 69.375rem;
+}
+
+.card-02-heading-text {
+    margin-top: -10rem; /* -160px */
+}
+
+.card-02-heading-text-para {
+    color: rgb(1, 1, 70);
+    font-size: 1.375rem;
+    margin-top: -8rem; /* -130px */
+}
+
+.card-02-date {
+    margin-top: 3.125rem; /* 50px */
+}
+
+/* Flex Boxes */
+
+.flex-boxes,
+.flex-boxes-02 {
+    display: flex;
+    gap: 2.5rem; /* 40px */
+    flex-wrap: wrap; /* for responsiveness */
+    margin-left: 12.5rem;
+}
+
+/* Cards 3 to 8 share similar styling */
+
+[class^="card-0"] {
+    max-width: 18rem; /* 288px - reasonable width for small cards */
+    background-color: rgba(25, 81, 210, 0.16);
+    border-radius: 0.5rem;
+    padding: 0 0 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.card-03-img,
+.card-04-img,
+.card-05-img,
+.card-06-img,
+.card-07-img,
+.card-08-img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    height: 13.75rem; /* 220px */
+    width: 100%;
+    display: block;
+}
+
+.card-03-heading-text-para,
+.card-04-heading-text-para,
+.card-05-heading-text-para,
+.card-06-heading-text-para,
+.card-07-heading-text-para,
+.card-08-heading-text-para {
+    color: rgb(1, 1, 70);
+    font-size: 1.375rem;
+    margin: 1rem 0 0 1.25rem; /* Top 16px, left 20px */
+}
+
+.card-03-date,
+.card-04-date,
+.card-05-date,
+.card-06-date,
+.card-07-date,
+.card-08-date {
+    color: rgb(72, 71, 71);
+    font-size: 1rem;
+    margin: 1rem 0 0 1.25rem;
+}
+
+/* Next Page Buttons */
+
+.next-page-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5rem; /* 80px */
+    margin: 9.375rem 0; /* 150px top/bottom */
+}
+
+.back-btn,
+.next-btn {
+    height: 3.125rem; /* 50px */
+    width: 6.25rem; /* 100px */
+    border-radius: 0.9375rem; /* 15px */
+    font-size: 1.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-btn {
+    background-color: rgba(22, 52, 123, 0.58);
+    color: rgb(99, 99, 99);
+}
+
+.next-btn {
+    background-color: #041e5c;
+    color: #ffffff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.next-btn:hover {
+    background-color: #13378b;
+}
+
+/* Button Text Helpers */
+
+.text-back,
+.text-next,
+.text-center {
+    font-size: 1.375rem;
+    user-select: none;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.text-center {
+    color: #041e5c;
+}
+
+/* Latest News Section */
+
+.latest-news-part {
+    margin-left: 12.5rem;
+    color: rgb(1, 1, 70);
+}
+
+.latest-news-text {
+    font-family: "Upworkrza", sans-serif;
+    font-size: 2.625rem; /* 42px */
+    color: #1951d2;
+}
+
+.latest-news-sub-text {
+    margin: 0.625rem 0 1.875rem 0; /*top 10px, bottom 30px*/
+    font-size: 1.1875rem; /*19px*/
+}
+
+/* Press Releases Row */
+
+.press-releases-row-part {
+    display: flex;
+    margin-left: 12.5rem;
+    gap: 2.5rem;
+    font-size: 1.1875rem; /*19px*/
+    color: rgb(1, 1, 70);
+    flex-wrap: wrap;
+}
+
+/* Second Card Part Container */
+
+.card-part-2nd {
+    margin-left: 14.375rem; /* 230px */
+    margin-top: 1.875rem; /* 30px */
+    display: flex;
+    gap: 3.125rem; /* 50px */
+    flex-wrap: wrap;
+}
+
+/* Small Cards */
+
+[class^="small-card-"] {
+    height: 18.75rem; /* 300px */
+    width: 20%;
+    background-color: rgba(25, 81, 210, 0.16);
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.small-card-text-heading-01,
+.small-card-text-heading-02,
+.small-card-text-heading-03,
+.small-card-text-heading-04 {
+    margin-left: 1.25rem;
+    padding-top: 0.625rem;
+    color: rgb(133, 131, 131);
+    font-weight: 600;
+}
+
+.small-card-text-para-heading-01,
+.small-card-text-para-heading-02,
+.small-card-text-para-heading-03,
+.small-card-text-para-heading-04 {
+    margin: 0.625rem 0 5.625rem 1.25rem;
+    color: rgb(1, 1, 70);
+    font-size: 1.375rem;
+}
+
+.small-card-text-read-news-01,
+.small-card-text-read-news-02,
+.small-card-text-read-news-03,
+.small-card-text-read-news-04 {
+    margin-left: 1.25rem;
+    color: blue;
+    text-decoration: underline;
+    margin-top: -1.25rem;
+    cursor: pointer;
+}
+
+/* Join The World Section */
+
+.join-the-world {
+    margin-left: 12.5rem;
+}
+
+.join-the-world-text {
+    font-family: "Upworkrza", sans-serif;
+    font-size: 2.25rem; /* 36px */
+    color: #000;
+    margin-bottom: 1.875rem;
+}
+
+/* Big Card Containers */
+
+.container-flex {
+    display: flex;
+    margin-left: 12.5rem;
+    margin-top: 2.1875rem; /* 35px */
+    gap: 1.875rem; /* 30px */
+    flex-wrap: wrap;
+}
+
+.big-card-container,
+.big-card-container-02 {
+    border-radius: 0.5rem;
+    height: 28.125rem; /* 450px */
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(123, 198, 235, 0.26);
+    position: relative;
+}
+
+.big-card-container-02 {
+    background-color: rgba(140, 210, 104, 0.41);
+    margin-left: 2.5rem;
+}
+
+.big-crad-image-01,
+.big-crad-image-02 {
+    height: 40%;
+    display: block;
+    margin-left: 35%;
+    margin-top: 1.875rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    width: auto;
+}
+
+/* Blue box inside big cards */
+
+.blue-box-inside {
+    background-color: rgba(82, 82, 220, 0.81);
+    height: 12.5rem; /* 200px */
+    width: 100%;
+    margin-top: 2.125rem; /* 34px */
+    border-radius: 0.5rem;
+    position: relative;
+    padding-left: 1.875rem;
+    padding-top: 1.25rem;
+    box-sizing: border-box;
+}
+
+.blue-box-text-01,
+.blue-box-text-02 {
+    color: white;
+    font-size: 1.875rem; /* 30px */
+    font-family: "Upworkrza", sans-serif;
+}
+
+/* Find Buttons in big cards */
+
+.find-btn-01,
+.find-btn-02 {
+    height: 3.75rem; /* 60px */
+    width: 11.25rem; /* 180px */
+    background-color: white;
+    border-radius: 55px;
+    position: absolute;
+    margin: 1.25rem;
+    margin-top: 4.375rem; /* 70px */
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #041e5c;
+    text-align: center;
+    line-height: 3.75rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+}
+
+.find-btn-01:hover,
+.find-btn-02:hover {
+    background-color: #e6e6e6;
+}
+
+/* Footer styles */
+
+.footer-bg {
+    margin: 1.563rem; /* 25px */
+}
+
+.footer-container {
+    background-color: #181818;
+    border-radius: 0.5rem;
+    height: auto;
+    min-height: 56.25rem; /* 900px */
+    display: flex;
+    gap: 3.125rem; /* 50px */
+    flex-wrap: wrap;
+    padding: 4rem 0;
+    margin-left: 12.5rem;
+    color: white;
+    box-sizing: border-box;
+}
+
+.for-clients,
+.for-talent,
+.resourses,
+.campany {
+    padding-top: 6.25rem; /* 100px */
+}
+
+.for-clients {
+    margin-left: 12.5rem;
+}
+
+.for-talent,
+.resourses,
+.campany {
+    margin-left: 6.25rem; /* 100px */
+}
+
+/* Footer Headings */
+
+.heading-text-a01,
+.heading-text-b01,
+.heading-text-c01,
+.heading-text-d01 {
+    color: rgb(151, 151, 151);
+    margin-bottom: 1.875rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+/* Footer Links */
+
+.a01,
+.b01,
+.c01,
+.d01 {
+    color: white;
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.a01:hover,
+.b01:hover,
+.c01:hover,
+.d01:hover {
+    color: #1951d2;
+    text-decoration: underline;
+}
+
+/* Follow Us Section */
+
+.follow-us {
+    margin-left: 12.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.follew-us-text {
+    color: rgb(151, 151, 151);
+    font-size: 1rem;
+}
+
+/* Footer Bottom - Responsive */
+
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2.5rem 3.75rem;
+    font-size: 0.875rem;
+    margin: 1.875rem 8.125rem; /* 30px top/bottom, 130px left/right */
+    border-radius: 0.5rem;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-between;
+    margin-bottom: 1.875rem;
+}
+
+.footer-column h4 {
+    font-size: 0.9375rem; /* 15px */
+    margin-bottom: 0.75rem; /* 12px */
+    color: #ccc;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem; /* 8px */
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1.25rem; /* 20px */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem; /* 20px */
+}
+
+.social-icons span,
+.apps span {
+    margin-right: 0.625rem; /* 10px */
+}
+
+.social-icons a,
+.apps i {
+    margin-right: 0.625rem;
+    color: #fff;
+    font-size: 1.125rem; /* 18px */
+}
+
+.legal a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 0.3125rem; /* 5px */
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+.legal p {
+    display: inline;
+    margin-right: 0.625rem;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .header-text02 {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .jvr-text,
+    .jvr-sub-text {
+        margin-left: 2rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .box-01 {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding-top: 3rem;
+    }
+    .card-01-heading-text,
+    .card-01-heading-text-para,
+    .card-01-date,
+    .card-02-heading-text,
+    .card-02-heading-text-para,
+    .card-02-date {
+        position: static;
+        padding-left: 0;
+        margin-top: 0.5rem;
+    }
+    .card-02-img {
+        margin-left: 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+    }
+    .flex-boxes,
+    .flex-boxes-02,
+    .card-part-2nd {
+        justify-content: center;
+        margin-left: 0;
+        gap: 1.5rem;
+    }
+    [class^="card-0"], [class^="small-card-"] {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 2rem;
+    }
+    .next-page-btn {
+        margin-left: 0;
+        gap: 2rem;
+    }
+    .find-btn-01,
+    .find-btn-02 {
+        position: relative;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .container-flex {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .big-card-container,
+    .big-card-container-02 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer-container {
+        flex-direction: column;
+        margin-left: 0;
+        min-height: auto;
+        padding: 2rem;
+    }
+    .for-clients,
+    .for-talent,
+    .resourses,
+    .campany,
+    .follow-us {
+        margin-left: 0;
+        padding-top: 2rem;
+    }
+}
+
+/* Small screens: mobile */
+
+@media (max-width: 640px) {
+    .jvr-text {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        line-height: 3rem;
+    }
+    .jvr-sub-text {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .header-text02 {
+        flex-direction: column;
+        margin-left: 1rem;
+        gap: 0.75rem;
+    }
+    .next-page-btn {
+        flex-direction: column;
+        margin: 3rem 1rem;
+        gap: 1rem;
+    }
+    .back-btn,
+    .next-btn {
+        width: 100%;
+    }
+    .flex-boxes,
+    .flex-boxes-02,
+    .card-part-2nd {
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .small-card-01,
+    .small-card-02,
+    .small-card-03,
+    .small-card-04,
+    [class^="card-0"] {
+        width: 100%;
+        margin: 0 0 1.5rem;
+    }
+    .container-flex {
+        margin-left: 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .big-card-container,
+    .big-card-container-02 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer-container {
+        padding: 1.5rem;
+        margin-left: 0;
+    }
+    .for-clients,
+    .for-talent,
+    .resourses,
+    .campany,
+    .follow-us {
+        margin-left: 0;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Utility Classes */
+
+.center {
+    text-align: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray-light {
+    color: rgb(151, 151, 151);
+}
+
+.text-dark-blue {
+    color: rgb(1, 1, 70);
+}
+
+/* Accessibility Focus States */
+
+.a1:focus,
+.a2:focus,
+.a3:focus,
+.a4:focus,
+.a5:focus,
+.a6:focus,
+.back-btn:focus,
+.next-btn:focus {
+    outline: 3px solid rgba(25, 81, 210, 0.8);
+    outline-offset: 2px;
+    transition: outline 0.3s ease;
+}
+
+

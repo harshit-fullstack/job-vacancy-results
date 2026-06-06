@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/index</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/About-Us</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/contact</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Job Related Pages -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/jobs</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/job-listing</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/industry-jobs</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/job</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Company Pages -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/companies</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/company</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Career & Courses -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/career</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/courses</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog & Press -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/blog</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/press</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/press-blog</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Support Pages -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/how-to-apply</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/help-center</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/faq</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/resume</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/privacy-policy</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.jobvacancyresult.com/terms-of-service</loc>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Sitemap -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/site-map</loc>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Error Page -->
+  <url>
+    <loc>https://www.jobvacancyresult.com/404</loc>
+    <priority>0.1</priority>
+  </url>
+</urlset>

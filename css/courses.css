@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.number-counter {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px,
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Achievers Section */
+.achievers {
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.achievers h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff6a00;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Achievers Container */
+/* Achievers Container */
+.achievers-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.achievers-slider {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* let content stretch as wide as needed */
+  animation: scrollAchievers 40s linear infinite;
+}
+
+@keyframes scrollAchievers {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* move exactly one set width */
+  }
+}
+
+/* .achiever-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  flex-shrink: 0;
+  text-align: center;
+} */
+.achiever-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+}
+
+/* Achiever Card */
+ 
+
+/* Swiper Container */
+.swiper {
+  display: flex;
+  justify-content: center; /* Center the swiper container horizontally */
+  align-items: center; /* Center the swiper container vertically */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit max width */
+  margin: auto; /* Center the swiper container */
+  padding-bottom: 20px;
+  height: auto; /* Adjust height dynamically */
+}
+
+/* Swiper Wrapper */
+.swiper-wrapper {
+  display: flex;
+  justify-content: center; /* Center the slides horizontally */
+  align-items: center; /* Center the slides vertically */
+  gap: 5px; /* Reduce the gap between slides */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove any extra margin */
+}
+
+/* Achiever Card */
+.achiever-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 15px; */
+  width: 200px; /* Card width */
+  text-align: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+
+/* Achiever Card Title */
+.achiever-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.achiever-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .swiper-slide {
+    width: 25%; /* Show 4 cards on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 33.33%; /* Show 3 cards on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    width: 50%; /* Show 2 cards on extra small screens */
+  }
+}
+
+/* ----------------Client Section Scroller--------------- */
+@keyframes slide2 {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* @keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(1);
+    }
+} */
+.logos2 {
+  overflow: hidden;
+  padding: 0px 0px;
+  background: rgb(13, 13, 13);
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos2:before,
+.logos2:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos2:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos2:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* .logos2:hover .logos-slide2 {
+    animation-play-state: paused;
+  } */
+
+.logos-slide2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  animation: 35s slide2 infinite linear;
+  /* transition: all .4s ease-in-out;
+    cursor: pointer; */
+}
+
+.logos-slide2 img {
+  height: 60px;
+  margin: 0 20px;
+}
+
+@media only screen and (max-width:520px) {
+
+  .logos-slide2 img {
+    height: 35px;
+    margin: 0 20px;
+  }
+}
+
+/*============== start clients section ==========*/
+
+.clients2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* space between logos */
+  background-color: var(--boxColor);
+  overflow: hidden;
+  padding: 16px 0;
+}
+
+/* .clients2 img {
+    filter: grayscale(100%);
+} */
+
+.clients2 img {
+  display: block;
+  height: 60px;
+  margin: 0;
+  transition: filter 0.3s;
+}
+
+.clients2 img:hover {
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width:520px) {
+  .clients2 img {
+    height: 35px;
+  }
+}
+
+/*============== End clients section Scroller==========*/
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  margin-top: 0%;
+  padding: 0px 0px;
+  background: rgb(255, 255, 255);
+  white-space: nowrap;
+  position: relative;
+}
+
+
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0%;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* .logos:hover .logos-slide {
+    animation-play-state: paused;
+  } */
+
+.logos-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  /* space between logos */
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  display: block;
+  height: 60px;
+  margin: 0;
+  /* remove extra margin if needed */
+}
+
+@media only screen and (max-width:520px) {
+  .logos-slide img {
+    height: 35px;
+    margin: 0 20px;
+  }
+
+  .logos-slide2 img {
+    height: 35px;
+    margin: 0 20px;
+  }
+}
+
+/*============== start clients section ==========*/
+
+.clients1 {
+  background-color: var(--boxColor);
+}
+
+/* .clients1 img {
+    filter: grayscale(100%);
+} */
+
+.clients1 img:hover {
+  filter: grayscale(0);
+}
+
+.clients1 img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

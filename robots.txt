@@ -1,0 +1,21 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Disallow:
+
+# Disallow crawling of sensitive directories
+Disallow: /include/
+Disallow: /admin/
+Disallow: /config/
+Disallow: /db/
+
+# Disallow specific files
+Disallow: /About-Us.php
+Disallow: /courses.php
+
+# Allow specific assets
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://jobvacancyresult.com/sitemap.xml
